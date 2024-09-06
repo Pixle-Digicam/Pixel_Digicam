@@ -1,0 +1,108 @@
+:root {
+    --main-Color: #2e3192;
+    --firsttext-Color: #fff;
+    --secondtext-Color: #000;
+    --titleproduct-Color: #c69c6d;
+    --ratestar-Color: #f0c800;
+}
+
+
+/* ALl */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* Media */
+@media (max-width: 360px) { 
+    .parent .container {
+    width: 280px;
+    }
+}
+/* Small devices X (landscape phones, 390px and up) */
+@media (min-width: 390px) { 
+    .parent .container {
+    width: 380px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .parent .container {
+    width: 550px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .parent .container {
+    width: 720px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .parent .container {
+    width: 990px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .parent .container {
+    width: 1200px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .parent .container {
+    width: 1400px;
+    }
+}
+
+/* Media End */
+
+/* Header Start */
+.parent header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.parent header nav a {
+    font-size: 18px;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.parent header nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 0%;
+    height: 2px;
+    transition: all .35s;
+}
+
+.parent header nav a:hover::after {
+    width: 100%;
+}
+
+.parent header nav a span {
+    color: var(--main-Color);
+    font-weight: 800;
+}
+
+/* Header End */

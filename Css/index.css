@@ -1,0 +1,84 @@
+/* parent */
+
+.parent {
+    background-image: url(../Img/main_background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+/* Header */
+.parent header nav a {
+    color: var(--firsttext-Color);
+}
+.parent header nav a::after {
+    background-color: #fff;
+}
+
+/* Main */
+.parent main {
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    padding: 100px;
+}
+
+.parent main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.parent main h2 {
+    color: var(--firsttext-Color);
+    font-size: 40px;
+    text-align: center;
+}
+
+.parent main h5 {
+    color: var(--firsttext-Color);
+}
+
+.parent main h5 span {
+    color: var(--main-Color);
+}
+
+.parent main p {
+    color: var(--firsttext-Color);
+    font-size: 20px;
+    text-align: center;
+}
+
+.parent main button {
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--main-Color);
+    padding: 10px 20px;
+    margin: 30px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.parent main button::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    background-color: #2e3192;
+    transition: all 0.3s;
+    z-index: -1;
+}
+.parent main button:hover::before {
+    top: 0px;
+}
+
+.parent main button a {
+    color: var(--firsttext-Color);
+
+}
